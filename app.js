@@ -2,6 +2,7 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+var bodyParser = require('body-parser');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
