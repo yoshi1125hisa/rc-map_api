@@ -5,6 +5,7 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
+let sampleRouter = require('./routes/sample')
 
 let app = express();
 
@@ -25,6 +26,7 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/sample', sampleRouter);
 
 // catch 404 and forward to error handler           // ルーティングで該当先が無かったら、404画面を表示するミドルウェア。
 app.use(function(req, res, next) {
