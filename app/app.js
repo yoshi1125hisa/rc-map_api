@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-// var mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 // mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost:27017/ExpressAPI');
@@ -24,7 +24,7 @@ app.get('/v1/', function (req, res) {
     });
 });
 
-var router = require('./models/route/v1');
+const router = require('./models/route/v1');
 app.use('/v1/', router);
 
 app.listen(port);
