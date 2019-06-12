@@ -5,12 +5,41 @@
 - node.js (Express)
 - mongodb
 
-## 動作
+## 開発手順
+
+以下必須
 
 ```
 $ git clone <this_repository>
 $ cd <this_repository>
+```
+
+### ローカル
+
+#### パッケージインストール
+
+```
+$ npm i
+```
+
+#### 実行
+
+```
 $ npm run start
 ```
 
 http://localhost:3000 にアクセス
+
+### Docker
+
+#### ビルド
+
+```
+$ docker build -t rc-map_api .
+```
+
+#### 実行
+
+```
+$ docker run -p 3000:3000 -t rc-map_api
+```
