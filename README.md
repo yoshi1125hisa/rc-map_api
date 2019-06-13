@@ -43,3 +43,40 @@ $ docker build -t rc-map_api .
 ```
 $ docker run -p 3000:3000 -t rc-map_api
 ```
+
+---
+
+## MongoDBについてのメモ
+
+### 起動
+
+```
+$ sudo mongod --dbpath /var/db/
+```
+
+### データベースの作成
+
+```
+$ mongo
+>use <DB_NAME>
+```
+
+### コレクションの作成
+
+```
+>db.createCollection('<COLLECTION_NAME>')
+```
+
+`{ "ok" : 1 }` と返って来れば問題ありません
+
+### コレクションの確認
+
+```
+>show collections
+```
+
+### 終了
+
+```
+> quit()
+```
