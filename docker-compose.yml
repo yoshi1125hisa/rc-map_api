@@ -37,6 +37,6 @@ services:
       - 3000:3000
     volumes:                        # mount workdir
       - ./app:/src
-    command: [sh, -c, npm install && npm start]
+    command: [sh, -c, npm i && npm start]
 volumes:
   mongodb-data: {}
