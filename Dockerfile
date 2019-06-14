@@ -8,7 +8,7 @@ WORKDIR ${project_dir}
 
 RUN set -x && \
     apk upgrade --no-cache && \
-    npm install
+    npm i
 
 EXPOSE 3000
 
