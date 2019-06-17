@@ -61,6 +61,18 @@ $ mongo
 >use <DB_NAME>
 ```
 
+### データベースの一覧
+
+```
+>show dbs
+```
+
+### データベースの削除
+
+```
+>db.dropDatabase();
+```
+
 ### コレクションの作成
 
 ```
@@ -73,6 +85,12 @@ $ mongo
 
 ```
 >show collections
+```
+
+### コレクションの削除
+
+```
+>db.<COLLECTION_NAME>.drop();
 ```
 
 ### 終了
