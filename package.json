@@ -19,9 +19,12 @@
   "homepage": "https://github.com/yoshi1125hisa/railroad-crossing-map-api-express#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "errorhandler": "^1.5.1",
     "express": "^4.17.1",
+    "http": "0.0.0",
     "moment": "^2.24.0",
     "mongodb": "^3.2.7",
-    "mongoose": "^5.5.14"
+    "mongoose": "^5.5.14",
+    "path": "^0.12.7"
   }
 }
