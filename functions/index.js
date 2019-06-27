@@ -17,16 +17,16 @@ const app = express();
 
 exports.app = functions.https.onRequest((req, res) => {
 
-  app.get('/timestamp', (request, response) => {
-    response.send(`${Date.now()}`);
+  app.get('/timestamp', (req, res) => {
+    res.send(`${Date.now()}`);
   });
 
-  app.get('/all', (request, response) => {
-    // response.send("This is All endpoint");
+  app.get('/all', (req, res) => {
+    // res.send("This is All endpoint");
     /*　room1以下に対しての非同期コールバック */
     ref.on("value", function (snapshot) {
         /* ここに取得したデータを用いた何らかの処理 */
-        response.send(snapshot.val());
+        res.send(snapshot.val());
         console.log(snapshot.val());
       },
       function (errorObject) {
@@ -34,7 +34,7 @@ exports.app = functions.https.onRequest((req, res) => {
       });
   });
 
-  app.get('/prefecture', (request, response) => {
-    response.send("This is All endpoint");
+  app.get('/prefecture', (req, res) => {
+    res.send("This is All endpoint");
   });
 })
