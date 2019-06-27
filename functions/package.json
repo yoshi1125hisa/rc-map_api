@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "expres": "0.0.5",
-    "firebase-admin": "8.2.0",
-    "firebase-functions": "3.0.2"
+    "firebase-admin": "^8.2.0",
+    "firebase-functions": "^3.0.2"
   },
   "devDependencies": {
     "firebase-functions-test": "0.1.6"
